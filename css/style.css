@@ -136,3 +136,7 @@ h1 {
     border-radius: 0.5rem;
     border: 0;
 }
+
+#search-input:focus {
+    border: 0.1rem solid #a4a4a4;
+}
