@@ -61,6 +61,11 @@ h1 {
 
 #location {
     margin-right: 10%;
+    word-spacing: 0.2rem;
+}
+
+#country-code {
+    color: #4f4f4f; 
 }
 
 #weather-status {
@@ -89,7 +94,7 @@ h1 {
 #temperature {
     font-size: 7.2rem;
     line-height: 7.5rem;
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.2rem;
 }
 
 #weather-icon {
@@ -132,11 +137,11 @@ h1 {
     background-color: #f6f6f6;
     width: 100%;
     height: 2rem;
-    padding-left: 0.4rem;
-    border-radius: 0.5rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
     border: 0;
 }
 
 #search-input:focus {
-    border: 0.1rem solid #a4a4a4;
+    border: 0.15rem solid #a4a4a4;
 }
