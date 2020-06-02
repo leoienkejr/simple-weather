@@ -144,4 +144,5 @@ h1 {
 
 #search-input:focus {
     border: 0.15rem solid #a4a4a4;
+    outline: none;
 }
