@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="css/owfont-regular.min.css" rel="stylesheet" type="text/css">
     <title>WeatherNow</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
         <div id="main-card">
             <div id="card-top">
                 <p id="temperature">0<span id="celsius-symbol">°</span><span id="celsius-symbol-c">C</span></p>
-                <p id="weather-icon">-</p>
+                <i id="weather-icon" class=""></i>
             </div>
             <div id="card-bottom">
                 <p id="location">-</p>
@@ -28,8 +29,10 @@
         </div>
     </main>
     <footer>
-        <p id="data-source">Weather data by <a id="ow-link" href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
         <p id="copyright">Copyright © 2020 <a id="gh-link" href="https://github.com/leoienkejr" target="_blank">leoienkejr</a></p>
+        <p id="data-source">Weather data by <a id="ow-link" href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
+        <p id="icons-attribution">owfont icon set by <a id="icon-link" href="https://websygen.github.io/owfont/">Deniz Fuchidzhiev</a></p>
+
     </footer>
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

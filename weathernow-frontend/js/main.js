@@ -1,5 +1,5 @@
 window.onload = function(){
-    const default_locations = ['tokyo', 'new york', 'london', 'sao paulo', 'beijing'];
+    const default_locations = ['tokyo', 'new york', 'london', 'sao paulo', 'beijing', 'paris'];
     const location =  default_locations[Math.floor(Math.random() * default_locations.length)];
     const api_request_url = generateApiRequestURL(location);
     console.log(api_request_url);
@@ -33,4 +33,7 @@ function updatePage(weather_data){
 
     main_weather = weather_data['main_weather'];
     document.getElementById('weather-status').innerHTML = main_weather;
+
+    icon_class = 'owf owf-'.concat(weather_data['weather_id']);
+    document.getElementById('weather-icon').className = icon_class;
 }
