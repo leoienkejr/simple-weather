@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link href="css/owfont-regular.min.css" rel="stylesheet" type="text/css">
-    <title>WeatherNow</title>
-</head>
-<body>
-    <header>
-        <h1>WeatherNow</h1>
-    </header>
-    <main>
-        <div id="search-form">
-            <input id="search-input" type="search" placeholder="Search for a city" autofocus>
-        </div>
-        <div id="main-card">
-            <div id="card-top">
-                <p id="temperature">0<span id="celsius-symbol">°</span><span id="celsius-symbol-c">C</span></p>
-                <i id="weather-icon" class=""></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="css/owfont-regular.min.css" rel="stylesheet" type="text/css">
+        <title>WeatherNow</title>
+    </head>
+    <body>
+        <header>
+            <h1>WeatherNow</h1>
+        </header>
+        <main>
+            <div id="search-form">
+                <input id="search-input" type="search" placeholder="Search for a city" autofocus>
             </div>
-            <div id="card-bottom">
-                <p id="location">-</p>
-                <p id="weather-status">-</p> 
+            <div id="main-card">
+                <div id="card-top">
+                    <p id="temperature">0<span id="celsius-symbol">°</span><span id="celsius-symbol-c">C</span></p>
+                    <i id="weather-icon" class=""></i>
+                </div>
+                <div id="card-bottom">
+                    <p id="location">-</p>
+                    <p id="weather-status">-</p> 
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <p class = "footer-text" id="copyright">Copyright © 2020 <a class="footer-link" href="https://github.com/leoienkejr" target="_blank">leoienkejr</a></p>
-        <p class = "footer-text">Weather data by <a class="footer-link" href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
-        <p class = "footer-text">owfont icon set by <a class="footer-link" href="https://websygen.github.io/owfont/" target="_blank">Deniz Fuchidzhiev</a></p>
-
-    </footer>
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/scroll.js"></script>
-</body>
+        </main>
+        <footer>
+            <p class = "footer-text" id="copyright">Copyright © 2020 <a class="footer-link" href="https://github.com/leoienkejr" target="_blank">leoienkejr</a></p>
+            <p class = "footer-text">Weather data by <a class="footer-link" href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
+            <p class = "footer-text">owfont icon set by <a class="footer-link" href="https://websygen.github.io/owfont/" target="_blank">Deniz Fuchidzhiev</a></p>
+        </footer>
+        <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/scroll.js"></script>
+    </body>
 </html>
