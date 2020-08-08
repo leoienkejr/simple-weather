@@ -2,7 +2,6 @@ window.onload = function(){
     const default_locations = ['tokyo', 'new york', 'london', 'sao paulo', 'beijing', 'paris'];
     const location =  default_locations[Math.floor(Math.random() * default_locations.length)];
     const api_request_url = generateApiRequestURL(location);
-    console.log(api_request_url);
     callApi(api_request_url);
 }
 
@@ -12,11 +11,9 @@ function generateApiRequestURL(location_str){
 }
 
 async function callApi(request_url){
-    fetch(request_url).then(response => {
-        response.json().then(json_data => {
-            updatePage(json_data);
-        })
-    })
+    fetch(request_url)
+    .then(response => response.json())
+    .then(data => (updatePage(data)))
 }
 
 function updatePage(weather_data){
