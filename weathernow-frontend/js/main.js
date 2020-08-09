@@ -5,10 +5,13 @@ window.onload = function(){
     callApi(api_request_url);
 }
 
-const search_input = document.getElementById('search-input')
-search_input.onsearch = function(){
-    console.log('Search')
-}
+const search_button = document.getElementById('search-button')
+search_button.addEventListener('click', function(){
+    search_input = document.getElementById('search-input').value
+    console.log(search_input)
+    const api_request_url = generateApiRequestURL(search_input)
+    callApi(api_request_url)
+})
 
 function generateApiRequestURL(location_str){
     const api_url = 'https://leoienkejr-weathernow.herokuapp.com/api/bycityname/';
