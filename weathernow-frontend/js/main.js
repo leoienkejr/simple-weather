@@ -16,8 +16,11 @@ window.onload = function(){
 }
 
 function generateApiRequestURL(location_str){
-    const api_url = 'https://leoienkejr-weathernow.herokuapp.com/api/bycityname/';
-    return api_url.concat(location_str);
+    let api_url = 'https://leoienkejr-weathernow.herokuapp.com/api/bycityname/'
+
+    api_url = api_url.concat(encodeURI(location_str.replace('/', '').replace('.', '')));
+    console.log(api_url)
+
 }
 
 async function callApi(request_url){
@@ -34,7 +37,7 @@ function updatePage(weather_data){
     location_str = weather_data['city'].concat(', ', weather_data['country']);
     document.getElementById('location').innerHTML = location_str;
 
-    celsius_symbol = '<span id="celsius-symbol">°</span><span id="celsius-symbol-c">C</span>'
+    celsius_symbol = '<span id="celsius-symbol-c">C</span>'
     temperature_celsius = Math.trunc(weather_data['temp'] - 273.15);
     document.getElementById('temperature').innerHTML = temperature_celsius.toString().concat(celsius_symbol)
 
