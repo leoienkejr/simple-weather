@@ -32,7 +32,7 @@ function updatePage(weather_data){
     location_str = weather_data['city'].concat(', ', weather_data['country']);
     document.getElementById('location').innerHTML = location_str;
 
-    celsius_symbol = '<span id="celsius-symbol">°</span><span id="celsius-symbol-c">C</span>'
+    celsius_symbol = '<span id="celsius-symbol-c">C</span>'
     temperature_celsius = Math.trunc(weather_data['temp'] - 273.15);
     document.getElementById('temperature').innerHTML = temperature_celsius.toString().concat(celsius_symbol)
 
