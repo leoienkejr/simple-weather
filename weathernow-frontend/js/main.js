@@ -1,17 +1,17 @@
+function doSearch(){
+    search_input = document.getElementById('search-input').value
+    const api_request_url = generateApiRequestURL(search_input)
+    callApi(api_request_url)
+}
+
 window.onload = function(){
     const default_locations = ['tokyo', 'new york', 'london', 'sao paulo', 'beijing', 'paris'];
     const location =  default_locations[Math.floor(Math.random() * default_locations.length)];
     const api_request_url = generateApiRequestURL(location);
     callApi(api_request_url);
+    const search_button = document.getElementById('search-button')
+    search_button.addEventListener('click', doSearch)
 }
-
-const search_button = document.getElementById('search-button')
-search_button.addEventListener('click', function(){
-    search_input = document.getElementById('search-input').value
-    console.log(search_input)
-    const api_request_url = generateApiRequestURL(search_input)
-    callApi(api_request_url)
-})
 
 function generateApiRequestURL(location_str){
     const api_url = 'https://leoienkejr-weathernow.herokuapp.com/api/bycityname/';
