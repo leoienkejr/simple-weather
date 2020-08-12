@@ -17,7 +17,7 @@ window.onload = function(){
 
 function generateApiRequestURL(location_str){
     const api_url = 'https://leoienkejr-weathernow.herokuapp.com/api/bycityname/';
-    return api_url.concat(location_str);
+    return api_url.concat(encodeURI(location_str));
 }
 
 async function callApi(request_url){
