@@ -1,7 +1,9 @@
 function doSearch(){
     search_input = document.getElementById('search-input').value
-    const api_request_url = generateApiRequestURL(search_input)
-    callApi(api_request_url)
+    if (search_input.length > 0){
+        const api_request_url = generateApiRequestURL(search_input)
+        callApi(api_request_url)
+    }
 }
 
 window.onload = function(){
