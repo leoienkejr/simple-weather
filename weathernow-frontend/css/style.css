@@ -19,30 +19,24 @@
     #search-form {
         width: 50%;
     }
-
-    #main-card:hover {
-        transform: scale(1.05);
-        transition-duration: 0.8s;
-    }
-
 }
+
 html {
     height: 95%;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: #eaeaea;
-    color: #1f1f1f;
+    background-color: #0a0a0a;
+    color: #fafafa;
     height: 100%;
 }
 
 #main-card {
     margin-top: 2%;
-    background-color: #ededed;
+    background-color: #0a0a0a;
     margin-bottom: 1.3rem;
-    border-radius: 1rem;
-    box-shadow: 0rem 0.3rem 1.5rem -0.3rem #9f9f9f;
+    border-radius: 0.5rem;
     border-color: #9f9f9f;
     padding-bottom: 1.3rem;
 }
@@ -56,6 +50,8 @@ h1 {
     vertical-align: middle;
     display: inline;
     font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 2px solid cyan;
 
 }
 
@@ -94,10 +90,14 @@ h1 {
 #temperature {
     font-size: 7.2rem;
     line-height: 7.5rem;
+    padding-bottom: 3px;
+    /* color: cyan; */
+    border-bottom: 2px solid cyan;
 }
 
 #weather-icon {
-    font-size: 4rem;
+    margin-top: 0.5rem;
+    font-size: 4.5rem;
 }
 
 #celsius-symbol {
@@ -137,29 +137,31 @@ h1 {
 
 #search-input {
     box-sizing: border-box;
-    background-color: #f6f6f6;
+    background-color: #0a0a0a;
     width: 80%;
     height: 2rem;
     padding-left: 1rem;
-    border-radius: 1rem;
-    border: 2px solid #1f1f1f;
+    border-radius: 0.5rem;
+    border: 2px solid #fafafa;
+    color: #dadada
 }
 
 #search-input:focus {
-    border: 0.15rem solid #a4a4a4;
+    border: 0.15rem solid #dadada;
     outline: none;
 }
 
 .search-button {
+    outline: none;
     box-sizing: border-box;
     text-align: center;
     font-weight: 800;
-    background-color: #eaeaea
-    color: ##1f1f1f;
+    background-color: #0a0a0a;
+    color: #fafafa;
     float: right;
     height: 2rem;
     width: 4rem;
     padding-left: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     border: 2px solid #1f1f1f;
 }
