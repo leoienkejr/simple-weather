@@ -121,7 +121,7 @@ h1 {
     margin-left: 10%;
 }
 
-#location, #weather-status {
+.card-bottom p {
     vertical-align: middle;
     display: inline;
     font-weight: bold;
