@@ -14,9 +14,9 @@
             <h1>WeatherNow</h1>
         </header>
         <main>
-            <div id="search-form">
+            <div id="search">
                 <input type="text" oninput="doSearch()" autocomplete="off" id="search-input" placeholder="Search for a city" autofocus>
-                <button id="search-button" type="submit" class="search-button">Go</button>
+                <button id="search-button" type="button" class="search-button">Go</button>
             </div>
             <div id="main-card">
                 <div id="card-top">
@@ -24,8 +24,8 @@
                     <i id="weather-icon" class=""></i>
                 </div>
                 <div id="card-bottom">
-                    <p id="location">-</p>
-                    <p id="weather-status">-</p> 
+                    <p class="card-bottom-status"id="location">-</p>
+                    <p class="card-bottom-status" id="weather-status">-</p> 
                 </div>
             </div>
         </main>
