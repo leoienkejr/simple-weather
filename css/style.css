@@ -143,32 +143,34 @@ h1 {
 
 #search-input {
     box-sizing: border-box;
+    outline: none;
     display: inline-block;
     background-color: #0a0a0a;
     width: 100%;
     height: 2rem;
     padding-left: 1rem;
-    border-radius: 0.5rem;
-    border: 2px solid #fafafa;
+    border: 0;
+    border-bottom: 2px solid #fafafa;
     color: #dadada
-}
-
-#search-input:focus {
-    border: 0.15rem solid #dadada;
-    outline: none;
 }
 
 .search-button {
     outline: none;
     box-sizing: border-box;
     text-align: center;
-    font-weight: 800;
+
     background-color: #0a0a0a;
     color: #fafafa;
-    float: right;
+
     height: 2rem;
     width: 4rem;
     padding-left: 1rem;
-    border-radius: 0.5rem;
-    border: 2px solid #fafafa;
+    padding-right: 1rem;
+    border: 0;
+    font-weight: bold;
+}
+
+.search-button:hover, .search-button:active {
+    border-bottom: 2px solid #fafafa;
+    border-top: 2px solid #fafafa;
 }
