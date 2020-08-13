@@ -168,9 +168,9 @@ h1 {
     padding-right: 1rem;
     border: 0;
     font-weight: bold;
+    border-bottom: 2px solid #fafafa;
 }
 
 .search-button:hover, .search-button:active {
-    border-bottom: 2px solid #fafafa;
     border-top: 2px solid #fafafa;
 }
